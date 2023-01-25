@@ -1,0 +1,8 @@
+<div class="mt-5 w-100" style="height:500px;">
+  <ng-content select="[body]"> </ng-content>
+</div>
+<div class="text-capitalize d-flex flex-row justify-content-between" [class.flex]="home">
+  <a class="backBtn" [routerLink]="routerBack" [class.display]="home">go back</a>
+  <a class="btn" [routerLink]="router" *ngIf="!summary">next step</a>
+  <a class="btn" [routerLink]="router" *ngIf="summary">confirm</a>
+</div>

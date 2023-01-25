@@ -1,0 +1,46 @@
+.sidebar {
+  height: 97%;
+  margin: 10px;
+  background: url(../../../../assets/images/bg-sidebar-desktop.svg) no-repeat;
+  background-size: cover;
+  border-radius: 0.7rem;
+}
+
+.content {
+  padding-top: 30%;
+  /* width: 42px; */
+  margin-inline-start: 20%;
+}
+
+.border {
+  margin-bottom: 20%;
+  font-family: Ubuntu-Bold;
+  padding: 5px 24px 5px 15px;
+
+}
+
+small{
+ color: darkgrey !important;
+ font-family: Ubuntu-Regular;
+
+}
+
+.col-10 {
+  line-height: 0.5;
+}
+
+h6 {
+  line-height: 2;
+  letter-spacing: 2px;
+ font-family: Ubuntu-Bold;
+
+}
+
+.active {
+  background-color: hsl(206, 94%, 87%);
+  color:#000;
+}
+
+.content{
+  color: hsl(0, 0%, 100%);
+}

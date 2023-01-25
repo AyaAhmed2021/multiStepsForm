@@ -1,0 +1,95 @@
+<app-layout [router]="route" [routerBack]="routeBack">
+  <ng-container body>
+    <h1><span class=" text-capitalize">pick</span> add-ons</h1>
+    <h6 class="mb-4"> <span class=" text-capitalize">add-ons </span>help enhance your gaming experience.</h6>
+    <div *ngIf="plan == 'Monthly'">
+      <div class="card flex-row justify-content-between align-item-center py-3 px-2 mb-3"
+        [ngClass]="{'selected': isclicked1}" (click)="select('one')">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p #online><span class="text-capitalize">online</span> service</p>
+            <p class="second"><span class="text-capitalize">access</span> to multiplayer games</p>
+          </label>
+        </div>
+        <div>
+          <p class="price" #onlinePrice>+$1/mo</p>
+        </div>
+      </div>
+
+      <div class="card flex-row justify-content-between align-item-center py-3 px-2 mb-3"
+        [ngClass]="{'selected': isclicked2}" (click)="select('two')">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p #large><span class="text-capitalize">larger</span> storage</p>
+            <p class="second"><span class="text-capitalize">extra</span> <span class="text-uppercase">1tb</span> of
+              cloud save</p>
+          </label>
+        </div>
+        <div>
+          <p class="price" #largePrice>+$2/mo</p>
+        </div>
+      </div>
+
+      <div class="card flex-row justify-content-between align-item-center py-3 px-2"
+        [ngClass]="{'selected': isclicked3}" (click)="select('three')">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p class="text-capitalize" #custom>customizable profile</p>
+            <p class="second"><span class="text-capitalize">custom</span> theme on your profile</p>
+          </label>
+        </div>
+        <div>
+          <p class="price" #customPrice>+$2/mo</p>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="plan == 'Yearly'">
+      <div class="card flex-row justify-content-between align-item-center py-3 px-2 mb-3"
+        [ngClass]="{'selected': isclicked1}" (click)="select('one')">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p #online><span class="text-capitalize">online</span> service</p>
+            <p class="second"><span class="text-capitalize">access</span> to multiplayer games</p>
+          </label>
+        </div>
+        <div>
+          <p class="price" #onlinePrice>+$10/yr</p>
+        </div>
+      </div>
+
+      <div class="card flex-row justify-content-between align-item-center py-3 px-2 mb-3"
+        [ngClass]="{'selected': isclicked2}" (click)="select('two')">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p #large><span class="text-capitalize">larger</span> storage</p>
+            <p class="second"><span class="text-capitalize">extra</span> <span class="text-uppercase">1tb</span> of
+              cloud save</p>
+          </label>
+        </div>
+        <div>
+          <p class="price" #largePrice>+$20/yr</p>
+        </div>
+      </div>
+
+      <div class="card flex-row justify-content-between align-item-center py-3 px-2"
+        [ngClass]="{'selected': isclicked3}" (click)="select('three')">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            <p class="text-capitalize" #custom>customizable profile</p>
+            <p class="second"><span class="text-capitalize">custom</span> theme on your profile</p>
+          </label>
+        </div>
+        <div>
+          <p class="price" #customPrice>+$20/yr</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</app-layout>

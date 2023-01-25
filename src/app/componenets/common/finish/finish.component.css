@@ -1,0 +1,27 @@
+h1{
+  font-family: Ubuntu-Bold;
+  color: hsl(213, 96%, 18%);
+}
+
+p {
+  font-family: Ubuntu-Regular;
+  color: hsl(231, 11%, 63%);
+}
+
+.icon {
+  background-color: hsl(354deg 97% 75%);
+  text-align: center;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin:auto;
+  position: relative;
+}
+
+.icon fa-icon {
+  color: #fff;
+  position: absolute;
+  left: 24%;
+  font-size: 41px;
+  top: 5px;
+}

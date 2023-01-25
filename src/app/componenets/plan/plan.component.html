@@ -1,0 +1,90 @@
+<app-layout [router]="route" [routerBack]="routeBack">
+  <ng-container body>
+    <h1><span class=" text-capitalize">select</span> your plan</h1>
+    <h6 class="mb-4"> <span class=" text-capitalize">you </span>have the option of monthly or yearly billing.</h6>
+    <div class="d-flex justify-content-around my-5" *ngIf="month">
+      <div class="card col-3 d-flex justify-content-between" [ngClass]="{'offer': isclicked1}" (click)="select('one')" >
+        <div class="cover icon" style="  background-color: orange;">
+          <fa-icon [icon]="fagamepad"></fa-icon>
+        </div>
+        <div class="cover">
+          <h5 class="card-title text-capitalize" #arcade>arcade</h5>
+          <h6 class="card-subtitle" #arcadPrice>$9/mo</h6>
+        </div>
+
+      </div>
+
+      <div class="card col-3 d-flex justify-content-between" [ngClass]="{'offer': isclicked2}" (click)="select('two')">
+        <div class="cover icon">
+          <fa-icon [icon]="fagamepad"></fa-icon>
+        </div>
+        <div class="cover">
+          <h5 class="card-title text-capitalize" #advanced>advanced</h5>
+          <h6 class="card-subtitle" #advancedPrice>$12/mo</h6>
+        </div>
+
+      </div>
+
+      <div class="card col-3 d-flex justify-content-between" [ngClass]="{'offer': isclicked3}" (click)="select('three')">
+        <div class="cover icon" style= "background-color: hsl(243, 100%, 62%);">
+          <fa-icon [icon]="fagamepad"></fa-icon>
+        </div>
+        <div class="cover">
+          <h5 class="card-title text-capitalize" #pro>pro</h5>
+          <h6 class="card-subtitle" #proPrice>$15/mo</h6>
+        </div>
+
+      </div>
+    </div>
+    <div class="d-flex justify-content-around my-5" *ngIf="year">
+      <div class="card col-3 d-flex justify-content-between" [ngClass]="{'offer': isclicked1}" (click)="select('one')" style="height:205px">
+        <div class="cover icon" style="  background-color: orange;">
+          <fa-icon [icon]="fagamepad"></fa-icon>
+        </div>
+        <div class="cover">
+          <h5 class="card-title text-capitalize" #arcade>arcade</h5>
+          <h6 class="card-subtitle" #arcadePrice>$90/yr</h6>
+          <small style=" font-family: Ubuntu-Regular;
+          color: hsl(213, 96%, 18%);">2 months free</small>
+        </div>
+
+      </div>
+
+      <div class="card col-3 d-flex justify-content-between" [ngClass]="{'offer': isclicked2}" (click)="select('two')" style="height:205px">
+        <div class="cover icon">
+          <fa-icon [icon]="fagamepad"></fa-icon>
+        </div>
+        <div class="cover">
+          <h5 class="card-title text-capitalize" #advanced>advanced</h5>
+          <h6 class="card-subtitle" #advancedPrice>$120/yr</h6>
+          <small style=" font-family: Ubuntu-Regular;
+          color: hsl(213, 96%, 18%);">2 months free</small>
+        </div>
+
+      </div>
+
+      <div class="card col-3 d-flex justify-content-between" [ngClass]="{'offer': isclicked3}" (click)="select('three')" style="height:205px">
+        <div class="cover icon" style= "background-color: hsl(243, 100%, 62%);">
+          <fa-icon [icon]="fagamepad"></fa-icon>
+        </div>
+        <div class="cover">
+          <h5 class="card-title text-capitalize" #pro>pro</h5>
+          <h6 class="card-subtitle" #proPrice>$150/yr</h6>
+          <small style=" font-family: Ubuntu-Regular;
+          color: hsl(213, 96%, 18%);">2 months free</small>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-capitalize d-flex justify-content-evenly flex-row bg-light rounded-3 align-items-center">
+      <p class="period periodActive col-4" id="month" style="text-align: right;">monthly</p>
+      <div class="col-1 buttons rounded-pill d-flex justify-content-evenly align-items-center">
+        <a class="col-3 active" id="m" (click)="clickOne()"></a>
+        <a class="col-3" id="y" (click)="clickTwo()"></a>
+      </div>
+      <p class="period periodNotActive col-4" id="year">yearly</p>
+    </div>
+  </ng-container>
+
+</app-layout>

@@ -1,0 +1,53 @@
+h1{
+  font-family: Ubuntu-Bold;
+  color: hsl(213, 96%, 18%);
+}
+
+h6 {
+  font-family: Ubuntu-Regular;
+  color: hsl(231, 11%, 63%);
+}
+
+p {
+  font-family: Ubuntu-Medium;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0;
+}
+
+.second {
+  font-family: Ubuntu-Medium;
+  color: hsl(231, 11%, 63%);
+}
+
+.price {
+  font-family: Ubuntu-Medium;
+  color: hsl(243, 100%, 62%)
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+.card:hover {
+  border-color:hsl(243deg 96% 29%) ;
+  cursor: pointer;
+}
+
+.selected {
+  background-color:hsl(217, 100%, 97%);
+   border-color:hsl(243deg 96% 29%)
+}
+
+.form-check-input:checked {
+  background-color: hsl(243, 100%, 62%);
+  border-color: hsl(243, 100%, 62%);
+}
+
+.form-check-input:hover
+{
+  cursor:pointer;
+  border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+
+}

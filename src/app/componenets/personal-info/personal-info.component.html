@@ -1,0 +1,28 @@
+<app-layout [router]="route" [home]="true">
+  <ng-container body>
+<form formGroup="form">
+  <h1><span class=" text-capitalize">personal</span> info</h1>
+  <h6 class="mb-4"> <span class=" text-capitalize">please </span>provide your name, email address, and phone number.</h6>
+  <div class="text-capitalize" >
+    <label class="mb-1">Name</label>
+  <input class="mb-5 p-2 rounded-3" placeholder="e.g. Stephen King" [formControl]="form.get('name')">
+  <span *ngIf="form.get('name').errors?.['required']"> Name is required</span>
+  <span *ngIf="form.get('name').invalid"> Name is invalid</span>
+  <span *ngIf="form.get('name').errors?.['maxlength']"> Name must be less than 40 characters</span>
+
+  </div>
+
+  <div class="text-capitalize">
+    <label class="mb-1">Email address</label>
+  <input class="mb-5 p-2 rounded-3" placeholder="e.g. stephenking@lorem.com" [formControl]="form.get('email')">
+  </div>
+
+  <div class="text-capitalize" >
+    <label class="mb-1">phone number</label>
+  <input class="mb-5 p-2 rounded-3" placeholder="e.g. +1234567 890" [formControl]="form.get('phone')">
+  </div>
+</form>
+</ng-container>
+
+</app-layout>
+

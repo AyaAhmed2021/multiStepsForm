@@ -1,0 +1,101 @@
+.card {
+  height: 200px;
+  width: 30%;
+  border-radius: 0.5rem;
+}
+
+.card:hover {
+  border-color:hsl(243deg 96% 29%) ;
+  cursor: pointer;
+}
+
+.offer {
+  background-color:hsl(217, 100%, 97%);
+   border-color:hsl(243deg 96% 29%)
+}
+
+h1 {
+  font-family: Ubuntu-Bold;
+  color: hsl(213, 96%, 18%);
+}
+
+h6 {
+  font-family: Ubuntu-Regular;
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+}
+
+h5 {
+  font-family: Ubuntu-Bold;
+  color: hsl(213, 96%, 18%);
+  font-size: 17px;
+}
+
+input {
+  width: 85%;
+  font-family: Ubuntu-Medium;
+  color: hsl(213, 96%, 18%);
+  border: 1px solid hsl(229, 24%, 87%);
+}
+
+
+
+label {
+  font-family: Ubuntu-Medium;
+  color: hsl(213, 96%, 18%);
+  font-size: 15px;
+}
+
+.cover {
+  margin-inline-start: 15px;
+  margin-bottom: 15px;
+}
+
+.period {
+  margin: 0.5rem;
+  font-family: Ubuntu-Medium;
+  letter-spacing: -0.5px;
+}
+
+.periodActive {
+  color: hsl(213, 96%, 18%);
+}
+
+.periodNotActive {
+  color:hsl(231, 11%, 63%);
+}
+
+.buttons {
+  background-color:hsl(213, 96%, 18%);
+  height: 24px;
+}
+
+a {
+  display: inline-block;
+  height: 50%;
+  border-radius: 50%;
+  cursor:pointer;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.icon {
+  width: 32%;
+  height: 25%;
+  border-radius: 50%;
+  position: relative;
+  background-color: hsl(354deg 97% 75%) ;
+  margin-top: 20px;
+
+}
+
+.icon fa-icon {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  color: hsl(0, 0%, 100%);
+}
+
+

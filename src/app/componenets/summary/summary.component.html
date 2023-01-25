@@ -1,0 +1,38 @@
+<app-layout [router]="route" [routerBack]="routeBack" [summary]="true">
+  <ng-container body>
+    <h1><span class=" text-capitalize">finishing</span> up</h1>
+    <h6 class="mb-4"> <span class=" text-capitalize">double</span>-check everything looks <span
+        class="text-uppercase">ok</span> before confirming.</h6>
+    <div class="card p-3">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5 class="card-title text-capitalize plst1 m-0">{{planStep1}}({{plan}})</h5>
+          <a routerLink="/plan"> change</a>
+        </div>
+        <h6 class="card-title text-capitalize plst1">{{planStep1Price}}</h6>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between">
+        <div>
+          <h6 class="card-subtitle mb-3">{{planStep2}}</h6>
+          <h6 class="card-subtitle mb-3">{{planStep2_1}}</h6>
+          <h6 class="card-subtitle">{{planStep2_2}}</h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle mb-3 plst2">{{planStep2Price}}</h6>
+          <h6 class="card-subtitle mb-3 plst2">{{planStep2_1Price}}</h6>
+          <h6 class="card-subtitle plst2">{{planStep2_2Price}}</h6>
+        </div>
+      </div>
+    </div>
+      <div class="d-flex justify-content-between p-4">
+        <div>
+          <h6 class="card-subtitle mb-3">Total (per {{plan2}})</h6>
+        </div>
+        <div>
+          <h6 class="card-subtitle mb-3 plst2">${{sum}}</h6>
+        </div>
+      </div>
+
+  </ng-container>
+</app-layout>

@@ -1,0 +1,8 @@
+.card {
+  width: 55%;
+  height: 670px;
+  margin: auto;
+  border-radius: 0.7rem !important;
+  border: none;
+  margin-top: 6%;
+}

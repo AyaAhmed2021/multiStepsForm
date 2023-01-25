@@ -1,0 +1,29 @@
+h1{
+  font-family: Ubuntu-Bold;
+  color: hsl(213, 96%, 18%);
+}
+
+h6 , a{
+  font-family: Ubuntu-Regular;
+  color: hsl(231, 11%, 63%);
+}
+
+.card {
+  border-radius: 0.5rem!important;
+  background-color: hsl(231, 100%, 99%);
+  border: none;
+}
+
+.plst1 {
+  font-family: Ubuntu-Bold;
+  color: hsl(213, 96%, 18%);
+  font-size: 16px;
+}
+
+.plst2 {
+  font-family: Ubuntu-Regular;
+  color: hsl(213, 96%, 18%);
+  font-size: 15px;
+
+}
+
