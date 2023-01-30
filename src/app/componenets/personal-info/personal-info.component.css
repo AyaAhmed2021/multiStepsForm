@@ -37,7 +37,7 @@ input::-webkit-input-placeholder {
 label {
   font-family: Ubuntu-Medium;
   color: hsl(213, 96%, 18%);
-  font-size :15px
+  font-size: 15px;
 
 }
 
